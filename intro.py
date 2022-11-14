@@ -20,6 +20,7 @@ def update(): #update every frame
 
 def on_mouse_down(pos):  #this function is checking to see when the mouse cursor position matches the sprite position to simulate an impact
     if alien.collidepoint(pos): 
+        alien.image = 'alien_hurt'
         print("Eek!")
     else:
         print("You missed me!")
